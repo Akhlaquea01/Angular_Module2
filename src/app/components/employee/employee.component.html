@@ -20,6 +20,8 @@
                 <td>{{employee.dep}} </td>
                 <td>{{employee.city}}</td>
                 <td>{{employee.email}}</td>
+                <td>{{employee.dob | date:'short' | uppercase}}</td>
+                <td>{{employee.salary | currency:'INR'}}</td>
               </tr>
             </tbody>
           </table><button (click)="addEmployeeInChildComp()">Add Employee from child components</button>

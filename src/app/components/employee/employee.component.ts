@@ -24,7 +24,7 @@ export class EmployeeComponent implements OnInit{
   }
   addEmployeeInChildComp() {
     alert('Add employee details')
-    this.addEvent.emit({ empId: '10001', fname: 'Firoz', lname: 'Khan', dep: 'Web Devloper', city: 'Bengaluru', email: 'khan3firoz@gmail.com' });
+    this.addEvent.emit({ empId: '10001', fname: 'Firoz', lname: 'Khan', dep: 'Web Devloper', city: 'Bengaluru', email: 'khan3firoz@gmail.com' ,dob:"12/01/1999",salary:100000});
     // triggering an event;
   }}
 
