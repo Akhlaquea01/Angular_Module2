@@ -1,0 +1,4 @@
+<app-header></app-header>
+<button (click)="addEmployee()">Populate</button>
+<app-employee (addEvent)="addEventHandler($event)" [employees]="employees"></app-employee>
+<app-footer></app-footer>

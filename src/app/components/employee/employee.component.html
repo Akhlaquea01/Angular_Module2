@@ -1,0 +1,28 @@
+<div class="container">
+    <h1>Our Employe Details</h1>
+    <div>
+        <table class="table" border="1" >
+            <thead>
+              <tr>
+                <th scope="col">Employee Id</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Department</th>
+                <th scope="col">City</th>
+                <th scope="col">Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let employee of employees" appColor>
+                <th scope="row">{{employee.empId}}</th>
+                <td>{{employee.fname}}</td>
+                <td>{{employee.lname}}</td>
+                <td>{{employee.dep}} </td>
+                <td>{{employee.city}}</td>
+                <td>{{employee.email}}</td>
+              </tr>
+            </tbody>
+          </table><button (click)="addEmployeeInChildComp()">Add Employee from child components</button>
+
+    </div>
+</div>
